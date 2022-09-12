@@ -1,0 +1,138 @@
+:root {
+  --c-black: #000000;
+  --c-white: #ffffff;
+  --c-lgrey: #d3d3d3;
+  --c-red: #ff6961;
+  --c-green: #77dd77;
+  --c-turquoise: #06aed5;
+  --c-orange: #ee964b;
+  --c-yellow: #f4d35e;
+  --c-dblue: #023047;
+  --c-blue: #219ebc;
+  --c-lblue: #8ecae6;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: var(--c-black);
+  border-left: 1px solid var(--c-black);
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: var(--c-black);
+  border-radius: 0;
+  border-bottom: 3px solid var(--c-black);
+  background-image: linear-gradient(0.25turn, var(--c-lblue), var(--c-blue), var(--c-turquoise));
+}
+
+.jumbotron #currentDate {
+  font-weight: bold;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid var(--c-white);
+}
+
+.hour {
+  background-color: var(--c-white);
+  color: var(--c-black);
+  border-top: 1px dashed var(--c-black);
+  padding-top: 1em;
+}
+
+/*Included - Left color black for legibility*/
+.past {
+  background-color: var(--c-lgrey);
+  /* color: white; */
+}
+/*Included - Left color black for legibility*/
+.present {
+  background-color: var(--c-red);
+  /* color: white; */
+}
+
+/*Included - Left color black for legibility*/
+.future {
+  background-color: var(--c-green);
+  /* color: white; */
+}
+
+.saveBtn {
+  border-left: 1px solid var(--c-black);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--c-turquoise);
+  color: var(--c-white);
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron {
+  border-bottom: 2px solid var(--c-black);
+  }
+  .jumbotron h1 {
+    font-size: 3em;
+  }
+  .jumbotron p {
+    font-size: medium;
+  }
+  .jumbotron #currentDate {
+    font-size: 2em;
+  }
+  .row {
+    margin-bottom: 5em;
+  }  
+  .hour {
+    font-weight: bold;
+  }
+  textarea {
+    background: transparent;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    resize: none;
+    padding: 10px;
+  }
+  .saveBtn {
+    border: none;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media only screen and (max-width:502px) {
+    .jumbotron h1 {
+      font-size: 2.5em;
+    }
+    .jumbotron #currentDate {
+      font-size: 1.5em;
+    }
+}
